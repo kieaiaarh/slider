@@ -1,0 +1,41 @@
+ul {
+  list-style: none;
+  display: flex;
+}
+.slider-wrapper {
+  width: 600px;
+  height: 384px;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  background: #FFF
+}
+.slider-list {
+  width: 2420px;
+  height: 100%;
+  position: absolute;
+  background-color: #FFF;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.slider-list > li {
+  -webkit-transform: translateZ(0px);
+  width: 600px;
+  height: 100%;
+  padding-left: 5px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+  height: 0 !important;
+}
+
+.slider-buttons li {
+  font-size: 40px;
+}

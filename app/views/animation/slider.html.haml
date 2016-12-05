@@ -1,2 +1,10 @@
-%h1 Animation#slider
-%p Find me in app/views/animation/slider.html.erb
+= stylesheet_link_tag 'animation/slider'
+.slider-wrapper
+  %ul.slider-list
+    - (1..4).to_a.each do |i|
+      %li.slider-image
+        = image_tag "animation/slider/sample#{i}.png", alt: "sample#{i}"
+%ul.slider-buttons
+  - (1..4).to_a.each do |i|
+    %li.slider-button
+      = "sample#{i}"
